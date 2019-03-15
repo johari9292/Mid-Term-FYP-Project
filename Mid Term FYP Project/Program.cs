@@ -16,7 +16,9 @@ namespace Mid_Term_FYP_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            NewMethod();
         }
+
+        private static void NewMethod() => Application.Run(new fypmanger());
     }
 }
