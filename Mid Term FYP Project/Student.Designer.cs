@@ -196,9 +196,6 @@ namespace Mid_Term_FYP_Project
             // 
             // dataGridViewstudentdetail
             // 
-            this.dataGridViewstudentdetail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewstudentdetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewstudentdetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.newbtn,
@@ -296,14 +293,13 @@ namespace Mid_Term_FYP_Project
             this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(788, 411);
+            this.ClientSize = new System.Drawing.Size(853, 411);
             this.Controls.Add(this.Update);
             this.Controls.Add(this.dataGridViewstudentdetail);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonexit);
             this.Controls.Add(this.btnSave);
-            this.MaximumSize = new System.Drawing.Size(804, 450);
             this.Name = "Student";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

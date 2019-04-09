@@ -50,5 +50,17 @@ namespace Mid_Term_FYP_Project
             Form frm = new Project();
             frm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form frm = new  Groups();
+            frm.Show();
+        }
+
+        private void btnreports_Click(object sender, EventArgs e)
+        {
+            Form frm = new Report();
+            frm.Show();
+        }
     }
 }

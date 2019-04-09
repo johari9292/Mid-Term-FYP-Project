@@ -33,15 +33,15 @@
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewProjectEvalvation = new System.Windows.Forms.DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBoxtotalmarks = new System.Windows.Forms.TextBox();
-            this.textBoxtotalwieghtage = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.buttonExit = new System.Windows.Forms.Button();
-            this.buttonupdate = new System.Windows.Forms.Button();
             this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxtotalwieghtage = new System.Windows.Forms.TextBox();
+            this.textBoxtotalmarks = new System.Windows.Forms.TextBox();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.buttonupdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProjectEvalvation)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -89,6 +89,22 @@
             this.dataGridViewProjectEvalvation.TabIndex = 3;
             this.dataGridViewProjectEvalvation.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProjectEvalvation_CellContentClick);
             // 
+            // Update
+            // 
+            this.Update.HeaderText = "Update";
+            this.Update.Name = "Update";
+            this.Update.Text = "Update";
+            this.Update.UseColumnTextForButtonValue = true;
+            this.Update.Width = 48;
+            // 
+            // Delete
+            // 
+            this.Delete.HeaderText = "Delete";
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "Delete";
+            this.Delete.UseColumnTextForButtonValue = true;
+            this.Delete.Width = 44;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label3);
@@ -105,19 +121,14 @@
             this.groupBox1.Text = "Project Evalvation ";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // textBoxtotalmarks
+            // label3
             // 
-            this.textBoxtotalmarks.Location = new System.Drawing.Point(161, 57);
-            this.textBoxtotalmarks.Name = "textBoxtotalmarks";
-            this.textBoxtotalmarks.Size = new System.Drawing.Size(139, 20);
-            this.textBoxtotalmarks.TabIndex = 3;
-            // 
-            // textBoxtotalwieghtage
-            // 
-            this.textBoxtotalwieghtage.Location = new System.Drawing.Point(161, 87);
-            this.textBoxtotalwieghtage.Name = "textBoxtotalwieghtage";
-            this.textBoxtotalwieghtage.Size = new System.Drawing.Size(139, 20);
-            this.textBoxtotalwieghtage.TabIndex = 4;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(27, 60);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Total Marks";
             // 
             // label2
             // 
@@ -128,14 +139,19 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Total Weiaghtage";
             // 
-            // label3
+            // textBoxtotalwieghtage
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Total Marks";
+            this.textBoxtotalwieghtage.Location = new System.Drawing.Point(161, 87);
+            this.textBoxtotalwieghtage.Name = "textBoxtotalwieghtage";
+            this.textBoxtotalwieghtage.Size = new System.Drawing.Size(139, 20);
+            this.textBoxtotalwieghtage.TabIndex = 4;
+            // 
+            // textBoxtotalmarks
+            // 
+            this.textBoxtotalmarks.Location = new System.Drawing.Point(161, 57);
+            this.textBoxtotalmarks.Name = "textBoxtotalmarks";
+            this.textBoxtotalmarks.Size = new System.Drawing.Size(139, 20);
+            this.textBoxtotalmarks.TabIndex = 3;
             // 
             // buttonExit
             // 
@@ -158,22 +174,6 @@
             this.buttonupdate.UseVisualStyleBackColor = true;
             this.buttonupdate.Click += new System.EventHandler(this.buttonupdate_Click);
             // 
-            // Update
-            // 
-            this.Update.HeaderText = "Update";
-            this.Update.Name = "Update";
-            this.Update.Text = "Update";
-            this.Update.UseColumnTextForButtonValue = true;
-            this.Update.Width = 48;
-            // 
-            // Delete
-            // 
-            this.Delete.HeaderText = "Delete";
-            this.Delete.Name = "Delete";
-            this.Delete.Text = "Delete";
-            this.Delete.UseColumnTextForButtonValue = true;
-            this.Delete.Width = 44;
-            // 
             // ProjectEvalvation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -185,7 +185,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridViewProjectEvalvation);
             this.Controls.Add(this.buttonsave);
-            this.MaximumSize = new System.Drawing.Size(356, 429);
             this.Name = "ProjectEvalvation";
             this.Text = "ProjectEvalvation";
             this.Load += new System.EventHandler(this.ProjectEvalvation_Load);

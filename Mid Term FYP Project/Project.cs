@@ -20,7 +20,7 @@ namespace Mid_Term_FYP_Project
         SqlConnection con = new SqlConnection("Data Source=DESKTOP-OLQ1SQE;Initial Catalog=ProjectA;Integrated Security=True");
         private void DisplayData()
         {
-
+            
             con.Open();
             DataTable dt = new DataTable(); 
             SqlDataAdapter adapt = new SqlDataAdapter("select Title, Description From Project", con);

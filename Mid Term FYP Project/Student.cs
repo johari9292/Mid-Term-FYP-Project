@@ -20,6 +20,7 @@ namespace Mid_Term_FYP_Project
         {
             InitializeComponent();
         }
+
         private void ClearData()
         {
             textBoxFirstName.Text = "";
@@ -37,6 +38,7 @@ namespace Mid_Term_FYP_Project
             SqlDataAdapter adapt = new SqlDataAdapter("select [RegistrationNo] ,[FirstName],[LastName],[Contact],[Email],[DateOfBirth],[Gender] from Person inner join Student on Person.id = Student.id", con);
             adapt.Fill(dt);
             dataGridViewstudentdetail.DataSource = dt;
+           
             con.Close();
             
 

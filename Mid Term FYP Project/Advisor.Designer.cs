@@ -29,7 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Advisor));
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxdesignation = new System.Windows.Forms.ComboBox();
+            this.textBoxsalary = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.buttonexit = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.dataGridViewstudentdetail = new System.Windows.Forms.DataGridView();
+            this.buttnupdate = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btndel = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.buttonupdate = new System.Windows.Forms.Button();
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,155 +52,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.comboBoxGender = new System.Windows.Forms.ComboBox();
             this.textBoxMobileNo = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBoxdesignation = new System.Windows.Forms.ComboBox();
-            this.textBoxsalary = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.buttonexit = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.dataGridViewstudentdetail = new System.Windows.Forms.DataGridView();
-            this.buttnupdate = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.btndel = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.buttonupdate = new System.Windows.Forms.Button();
-            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewstudentdetail)).BeginInit();
             this.SuspendLayout();
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.textBoxFirstName);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.textBoxLastName);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.textBoxEmailAddress);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.comboBoxGender);
-            this.groupBox2.Controls.Add(this.textBoxMobileNo);
-            this.groupBox2.Location = new System.Drawing.Point(12, 13);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(665, 100);
-            this.groupBox2.TabIndex = 48;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Personal Info";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
-            // 
-            // textBoxFirstName
-            // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(78, 21);
-            this.textBoxFirstName.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(125, 20);
-            this.textBoxFirstName.TabIndex = 25;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 24);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "First Name";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(222, 24);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Last Name";
-            // 
-            // textBoxLastName
-            // 
-            this.textBoxLastName.Location = new System.Drawing.Point(296, 21);
-            this.textBoxLastName.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(115, 20);
-            this.textBoxLastName.TabIndex = 27;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(450, 24);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 13);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Date of Birth";
-            // 
-            // textBoxEmailAddress
-            // 
-            this.textBoxEmailAddress.Location = new System.Drawing.Point(527, 64);
-            this.textBoxEmailAddress.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBoxEmailAddress.Name = "textBoxEmailAddress";
-            this.textBoxEmailAddress.Size = new System.Drawing.Size(115, 20);
-            this.textBoxEmailAddress.TabIndex = 29;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(527, 21);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(115, 20);
-            this.dateTimePicker1.TabIndex = 38;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 67);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 13);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "Gender";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(450, 67);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 13);
-            this.label7.TabIndex = 35;
-            this.label7.Text = "Email Address";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(225, 67);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "Mobile No";
-            // 
-            // comboBoxGender
-            // 
-            this.comboBoxGender.FormattingEnabled = true;
-            this.comboBoxGender.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.comboBoxGender.Location = new System.Drawing.Point(78, 63);
-            this.comboBoxGender.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.comboBoxGender.Name = "comboBoxGender";
-            this.comboBoxGender.Size = new System.Drawing.Size(125, 21);
-            this.comboBoxGender.TabIndex = 34;
-            // 
-            // textBoxMobileNo
-            // 
-            this.textBoxMobileNo.Location = new System.Drawing.Point(296, 64);
-            this.textBoxMobileNo.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBoxMobileNo.Name = "textBoxMobileNo";
-            this.textBoxMobileNo.Size = new System.Drawing.Size(115, 20);
-            this.textBoxMobileNo.TabIndex = 33;
             // 
             // groupBox1
             // 
@@ -208,6 +72,9 @@
             // 
             // comboBoxdesignation
             // 
+            this.comboBoxdesignation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxdesignation.FormattingEnabled = true;
             this.comboBoxdesignation.Items.AddRange(new object[] {
             "Proffessor",
@@ -221,6 +88,9 @@
             // 
             // textBoxsalary
             // 
+            this.textBoxsalary.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxsalary.Location = new System.Drawing.Point(360, 32);
             this.textBoxsalary.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.textBoxsalary.Name = "textBoxsalary";
@@ -274,7 +144,10 @@
             // dataGridViewstudentdetail
             // 
             this.dataGridViewstudentdetail.AllowUserToOrderColumns = true;
-            this.dataGridViewstudentdetail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewstudentdetail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewstudentdetail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewstudentdetail.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewstudentdetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewstudentdetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -284,7 +157,7 @@
             this.dataGridViewstudentdetail.Location = new System.Drawing.Point(12, 202);
             this.dataGridViewstudentdetail.Name = "dataGridViewstudentdetail";
             this.dataGridViewstudentdetail.RowHeadersVisible = false;
-            this.dataGridViewstudentdetail.Size = new System.Drawing.Size(665, 257);
+            this.dataGridViewstudentdetail.Size = new System.Drawing.Size(711, 257);
             this.dataGridViewstudentdetail.TabIndex = 49;
             this.dataGridViewstudentdetail.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewstudentdetail_CellContentClick);
             // 
@@ -296,7 +169,6 @@
             this.buttnupdate.Text = "Update";
             this.buttnupdate.ToolTipText = "Update";
             this.buttnupdate.UseColumnTextForButtonValue = true;
-            this.buttnupdate.Width = 48;
             // 
             // btndel
             // 
@@ -306,7 +178,6 @@
             this.btndel.Text = "Delete";
             this.btndel.ToolTipText = "Delete";
             this.btndel.UseColumnTextForButtonValue = true;
-            this.btndel.Width = 44;
             // 
             // buttonupdate
             // 
@@ -319,34 +190,165 @@
             this.buttonupdate.UseVisualStyleBackColor = true;
             this.buttonupdate.Click += new System.EventHandler(this.buttonupdate_Click);
             // 
+            // textBoxFirstName
+            // 
+            this.textBoxFirstName.Location = new System.Drawing.Point(89, 25);
+            this.textBoxFirstName.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.textBoxFirstName.Name = "textBoxFirstName";
+            this.textBoxFirstName.Size = new System.Drawing.Size(125, 20);
+            this.textBoxFirstName.TabIndex = 52;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(18, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.TabIndex = 51;
+            this.label1.Text = "First Name";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(233, 28);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.TabIndex = 53;
+            this.label2.Text = "Last Name";
+            // 
+            // textBoxLastName
+            // 
+            this.textBoxLastName.Location = new System.Drawing.Point(307, 25);
+            this.textBoxLastName.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.textBoxLastName.Name = "textBoxLastName";
+            this.textBoxLastName.Size = new System.Drawing.Size(115, 20);
+            this.textBoxLastName.TabIndex = 54;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(461, 28);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 13);
+            this.label4.TabIndex = 55;
+            this.label4.Text = "Date of Birth";
+            // 
+            // textBoxEmailAddress
+            // 
+            this.textBoxEmailAddress.Location = new System.Drawing.Point(538, 68);
+            this.textBoxEmailAddress.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.textBoxEmailAddress.Name = "textBoxEmailAddress";
+            this.textBoxEmailAddress.Size = new System.Drawing.Size(115, 20);
+            this.textBoxEmailAddress.TabIndex = 56;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(538, 25);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(115, 20);
+            this.dateTimePicker1.TabIndex = 62;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(18, 71);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 13);
+            this.label6.TabIndex = 57;
+            this.label6.Text = "Gender";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(461, 71);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(73, 13);
+            this.label7.TabIndex = 61;
+            this.label7.Text = "Email Address";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(236, 71);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.TabIndex = 58;
+            this.label5.Text = "Mobile No";
+            // 
+            // comboBoxGender
+            // 
+            this.comboBoxGender.FormattingEnabled = true;
+            this.comboBoxGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.comboBoxGender.Location = new System.Drawing.Point(89, 67);
+            this.comboBoxGender.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.comboBoxGender.Name = "comboBoxGender";
+            this.comboBoxGender.Size = new System.Drawing.Size(125, 21);
+            this.comboBoxGender.TabIndex = 60;
+            // 
+            // textBoxMobileNo
+            // 
+            this.textBoxMobileNo.Location = new System.Drawing.Point(307, 68);
+            this.textBoxMobileNo.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.textBoxMobileNo.Name = "textBoxMobileNo";
+            this.textBoxMobileNo.Size = new System.Drawing.Size(115, 20);
+            this.textBoxMobileNo.TabIndex = 59;
+            // 
             // Advisor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(681, 450);
+            this.ClientSize = new System.Drawing.Size(727, 450);
+            this.Controls.Add(this.textBoxFirstName);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBoxLastName);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBoxEmailAddress);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.comboBoxGender);
+            this.Controls.Add(this.textBoxMobileNo);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonupdate);
             this.Controls.Add(this.dataGridViewstudentdetail);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonexit);
-            this.Controls.Add(this.btnSave);
-            this.MaximumSize = new System.Drawing.Size(697, 489);
             this.Name = "Advisor";
             this.Text = "Advisor";
             this.Load += new System.EventHandler(this.Advisor_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewstudentdetail)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button buttonexit;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.TextBox textBoxsalary;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView dataGridViewstudentdetail;
+        private System.Windows.Forms.DataGridViewButtonColumn buttnupdate;
+        private System.Windows.Forms.DataGridViewButtonColumn btndel;
+        private System.Windows.Forms.ComboBox comboBoxdesignation;
+        private System.Windows.Forms.Button buttonupdate;
         private System.Windows.Forms.TextBox textBoxFirstName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -359,16 +361,5 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBoxGender;
         private System.Windows.Forms.TextBox textBoxMobileNo;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button buttonexit;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TextBox textBoxsalary;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dataGridViewstudentdetail;
-        private System.Windows.Forms.DataGridViewButtonColumn buttnupdate;
-        private System.Windows.Forms.DataGridViewButtonColumn btndel;
-        private System.Windows.Forms.ComboBox comboBoxdesignation;
-        private System.Windows.Forms.Button buttonupdate;
     }
 }

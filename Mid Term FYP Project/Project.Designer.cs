@@ -32,8 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBoxtitle = new System.Windows.Forms.TextBox();
             this.textBoxdescription = new System.Windows.Forms.TextBox();
+            this.textBoxtitle = new System.Windows.Forms.TextBox();
             this.buttonsave = new System.Windows.Forms.Button();
             this.buttonupdate = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -78,14 +78,6 @@
             this.groupBox1.Text = "Project Detail";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // textBoxtitle
-            // 
-            this.textBoxtitle.Location = new System.Drawing.Point(97, 27);
-            this.textBoxtitle.Name = "textBoxtitle";
-            this.textBoxtitle.Size = new System.Drawing.Size(181, 20);
-            this.textBoxtitle.TabIndex = 2;
-            this.textBoxtitle.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // textBoxdescription
             // 
             this.textBoxdescription.Location = new System.Drawing.Point(97, 74);
@@ -93,6 +85,14 @@
             this.textBoxdescription.Name = "textBoxdescription";
             this.textBoxdescription.Size = new System.Drawing.Size(181, 80);
             this.textBoxdescription.TabIndex = 3;
+            // 
+            // textBoxtitle
+            // 
+            this.textBoxtitle.Location = new System.Drawing.Point(97, 27);
+            this.textBoxtitle.Name = "textBoxtitle";
+            this.textBoxtitle.Size = new System.Drawing.Size(181, 20);
+            this.textBoxtitle.TabIndex = 2;
+            this.textBoxtitle.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // buttonsave
             // 
@@ -169,7 +169,6 @@
             this.Controls.Add(this.buttonupdate);
             this.Controls.Add(this.buttonsave);
             this.Controls.Add(this.groupBox1);
-            this.MaximumSize = new System.Drawing.Size(493, 489);
             this.Name = "Project";
             this.Text = "Project";
             this.Load += new System.EventHandler(this.Project_Load);
